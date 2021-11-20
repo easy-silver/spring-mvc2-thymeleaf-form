@@ -21,6 +21,9 @@ public class FormItemController {
 
     private final ItemRepository itemRepository;
 
+    /**
+     * 컨트롤러를 호출할 때 자동으로 모델에 등록
+     */
     @ModelAttribute("regions")
     public Map<String, String> regions() {
         Map<String, String> regions = new LinkedHashMap<>();
